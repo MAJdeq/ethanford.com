@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Specify your target JavaScript version
+    "module": "commonjs", // Specify your module system (e.g., commonjs, es6)
+    "strict": true, // Enable strict type checking
+    "jsx": "react", // Specify the JSX code generation (e.g., react or preserve)
+    "esModuleInterop": true, // Enable interoperability with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "noEmit": true // Do not emit JavaScript files
+  }
+}
