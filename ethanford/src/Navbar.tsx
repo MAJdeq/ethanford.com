@@ -1,28 +1,35 @@
 import React from "react";
+
 function Navbar() {
   return (
     <>
-      <nav className="border-gray-200 bg-gray-800 shadow-lg shadow-gray-700 py-5">
+      <nav className="border-gray-200 bg-gray-800 shadow-lg shadow-gray-700 py-3">
         <div className="flex pl-8 pt-2">
-          <a className="text-xl text-white font-bold pt-2" href="/">
-            ETHAN FORD
+          <a className="text-2xl text-white pt-3 pb-3" href="/">
+            Ethan Ford
           </a>
-          <div className=" text-white ml-auto">
+          <div className="text-white ml-auto text-md">
             <a
-              className="text-md mr-3 transition-transform transform hover:text-gray-400 transition duration-100 ease-in"
-              href="/"
+              href="#home"
+              className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
             >
               Home
             </a>
             <a
-              className="text-md mr-3 transition-transform transform hover:text-gray-400 transition duration-100 ease-in"
-              href="/"
+              href="#about"
+              className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
+            >
+              About Me
+            </a>
+            <a
+              href="#work"
+              className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
             >
               Work Exp
             </a>
             <a
-              className="text-md mr-11 transition-transform transform hover:text-gray-400 transition duration-100 ease-in"
-              href="/"
+              href="#projects"
+              className="text-md mr-11 hover:text-gray-400 duration-200 ease-in"
             >
               Projects
             </a>
@@ -31,7 +38,7 @@ function Navbar() {
               href="../src/assets/Resume-5.pdf"
               download="Ethan Ford's Resume"
             >
-              <button className="bg-gray-700 text-lg rounded-md hover:bg-gray-900 font-semibold transition-transform transform hover:scale-105 p-3">
+              <button className="bg-gray-700 text-lg rounded-md hover:bg-gray-900 font-semibold transition-transform transform hover:scale-105 p-4 relative">
                 Resume
               </button>
             </a>

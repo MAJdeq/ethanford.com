@@ -4,8 +4,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        SourceCodePro: ['"source-code-pro"', "sans"],
-        Roboto: ['"roboto"', "sans"],
+        SourceCodePro: ['"Source+Code+Pro"', "sans"],
+        Roboto: ['"Roboto"', "sans"],
+      },
+      keyframes: {
+        "left-slide": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "left-slide": "left-slide 1s ease-out",
       },
     },
   },
