@@ -1,7 +1,5 @@
 import React from "react";
-import { DiGithubBadge } from "react-icons/di";
 import { CiLocationOn } from "react-icons/ci";
-import { BsLinkedin } from "react-icons/bs";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import { PiBooksDuotone } from "react-icons/pi";
 import { useInView } from "react-intersection-observer";
@@ -30,7 +28,7 @@ function Home() {
             }`}
             style={{ marginLeft: "9rem" }}
           >
-            <img src="../src/assets/zorocool.png" alt="Roronoa Zoro" />
+            <img src={"/assets/zorocool.png"} alt="Roronoa Zoro" />
           </div>
           <div
             className="h-auto w-5/6 mt-12 ml-12 mr-16"

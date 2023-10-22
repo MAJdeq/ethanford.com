@@ -11,7 +11,7 @@ export default function Home() {
           className={`flex mr-auto ml-auto max-w-6xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
             inView ? "opactiy-100 animate__fadeIn" : ""
           }`}
-          style={{ height: "65vh" }}
+          style={{ height: "75vh" }}
         >
           <div className="w-1/2">
             <div>
