@@ -1,12 +1,15 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import About from "./About";
+import WorkExp from "./WorkExp";
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-4xl font-bold text-blue-500 text-center">
-          Hello World
-        </h1>
-      </div>
+      <Navbar />
+      <Home />
+      <About />
+      <WorkExp />
     </>
   );
 }
