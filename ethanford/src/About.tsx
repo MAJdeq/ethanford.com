@@ -25,29 +25,29 @@ function Home() {
         <div className="mb-4 flex items-start">
           <div
             ref={ref}
-            className={`ml-12 mt-0 pt-3 scale-90 animate__animated ${
-              inView ? "animate__fadeInLeft" : ""
+            className={`opacity-0 ml-12 mt-0 pt-8 animate__animated ${
+              inView ? "opactiy-100 animate__fadeInLeft" : ""
             }`}
-            style={{ marginLeft: "6.5rem" }}
+            style={{ marginLeft: "9rem" }}
           >
-            <img src="../src/assets/zorocool.png" alt="Zoro" />
+            <img src="../src/assets/zorocool.png" alt="Roronoa Zoro" />
           </div>
           <div
             className="h-auto w-5/6 mt-12 ml-12 mr-16"
-            style={{ marginRight: "5rem", marginLeft: "5rem" }}
+            style={{ marginRight: "3rem", marginLeft: "7rem" }}
           >
             <div
               ref={ref}
-              className={`bg-white border w-4/6 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
-                inView ? "animate__fadeInRight" : ""
+              className={`opacity-0 bg-white border w-3/4 mt-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
+                inView ? "opacity-100 animate__fadeInRight" : ""
               }`}
-              style={{ marginLeft: "6rem" }}
+              style={{ marginLeft: "3.5rem" }}
             >
               <div className="flex flex-col items-start p-6">
                 <img
                   className="w-24.5 h-24 mb-3 mt-3 rounded-full shadow-lg"
                   src="../src/assets/business pic.jpeg"
-                  alt="Ethan image"
+                  alt="Ethan Image"
                 />
                 <div>
                   <h1 className="text-xl text-white pt-1 font-semibold inline">
@@ -91,7 +91,7 @@ function Home() {
                     </div>
                   </div>
                   <button
-                    className={`inline items-end text-white font-bold p-1.5 rounded-full ${
+                    className={`inline items-end text-white font-bold p-2.5 rounded-full ${
                       isClicked
                         ? "bg-gray-600 hover:bg-gray-700 transition-transform transform hover:scale-105"
                         : "bg-blue-500 hover:bg-blue-600 transition-transform transform hover:scale-105"
@@ -133,24 +133,22 @@ function Home() {
                         size={20}
                       />
                       <span className="text-sm text-gray-400 pb-2 inline pl-2">
-                        @MAJdeq <BsDot className="inline" size={15} /> 2h
+                        @EthanFord <BsDot className="inline" size={15} /> 2h
                       </span>
-                      <div className="pt-1 text-white">
+                      <div className="pt-1 text-white text-md">
                         <h1>
                           Hi! I am currently studying Computer Science at Utah
                           State University. As a developer, I'm striving to
                           learn as much as possible, while injecting parts of
-                          myself into my projects (surgically). As far as my
-                          passions go, I love to program, exercise, hangout with
-                          friends, watching anime, and relaxing after a long
-                          days work.
+                          myself into my projects (surgically).
                         </h1>
-                        <h1 className="pt-1">
+                        <h1 className="pt-2">
                           As far as my passions go, I love to program, exercise,
-                          hangout with friends, watching anime, and relax after
-                          a long days work.
+                          hangout with friends, and relax after a long days
+                          work. My hobbies include gaming, watching anime (One
+                          Piece), and upgrading my PC!
                         </h1>
-                        <h1 className="pt-1">
+                        <h1 className="pt-2">
                           Feel free to contact me to discuss new opportunities.
                           Have fun exploring my portfolio!
                         </h1>

@@ -22,7 +22,7 @@ function Navbar() {
               About Me
             </a>
             <a
-              href="#work"
+              href="#workexp"
               className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
             >
               Work Exp
