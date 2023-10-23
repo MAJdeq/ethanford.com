@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import About from "./About";
-import WorkExp from "./WorkExp";
+import Navbar from "./components/Navbar";
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
+import WorkExp from "./components/sections/WorkExp";
 function App() {
   return (
     <>
