@@ -28,7 +28,7 @@ function Home() {
             }`}
             style={{ marginLeft: "9rem" }}
           >
-            <img src={"../../assets/zorocool.png"} alt="Roronoa Zoro" />
+            <img src={"../../../src/assets/zorocool.png"} alt="Roronoa Zoro" />
           </div>
           <div
             className="h-auto w-5/6 mt-12 ml-12 mr-16"
@@ -44,7 +44,7 @@ function Home() {
               <div className="flex flex-col items-start p-6">
                 <img
                   className="w-24.5 h-24 mb-3 mt-3 rounded-full shadow-lg"
-                  src="../../assets/business pic.jpeg"
+                  src="../../../src/assets/business pic.jpeg"
                   alt="Ethan Image"
                 />
                 <div>
