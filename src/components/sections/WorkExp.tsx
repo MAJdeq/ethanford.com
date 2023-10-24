@@ -1,6 +1,10 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { LibraryBig, Briefcase } from "lucide-react";
+import usu from "../../assets/usu.png";
+import ace from "../../assets/aceMartialArts.png";
+import dpc from "../../assets/dpc.png";
+import dhills from "../../assets/thunder.png";
 
 function WorkExp() {
   const [ref, inView] = useInView();
@@ -60,11 +64,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img
-              src="../../../src/assets/usu.png"
-              alt="Cool Zoro"
-              className=" scale-75"
-            />
+            <img src={usu} alt="Cool Zoro" className=" scale-75" />
           </div>
         </li>
         <li className="mb-10 ml-4 bg-gray-800 rounded-lg p-3 w-3/4 flex items-center">
@@ -82,10 +82,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img
-              src="../../../src/assets/aceMartialArts.png"
-              className="scale-75"
-            />
+            <img src={ace} className="scale-75" />
           </div>
         </li>
         <li className="ml-4 bg-gray-800 rounded-lg w-3/4 p-3 flex items-center">
@@ -103,7 +100,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img src="../../../src/assets/dpc.png" className="scale-75" />
+            <img src={dpc} className="scale-75" />
           </div>
         </li>
         <li className="mb-10 ml-4 bg-gray-800 rounded-lg p-3 mt-10  w-3/4 flex items-center">
@@ -121,7 +118,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img src="../../../src/assets/thunder.png" className=" scale-75" />
+            <img src={dhills} className=" scale-75" />
           </div>
         </li>
       </ol>

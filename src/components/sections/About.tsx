@@ -9,6 +9,9 @@ import { useState } from "react";
 import { VscPinned } from "react-icons/vsc";
 import { GoVerified } from "react-icons/go";
 import { BsDot } from "react-icons/bs";
+import zorocool from "../../assets/zorocool.png";
+import businesspic from "../../assets/business pic.jpeg";
+
 function Home() {
   const [ref, inView] = useInView();
   const [isClicked, setIsClicked] = useState(false);
@@ -28,7 +31,7 @@ function Home() {
             }`}
             style={{ marginLeft: "9rem" }}
           >
-            <img src={"../../../src/assets/zorocool.png"} alt="Roronoa Zoro" />
+            <img src={zorocool} alt="Roronoa Zoro" />
           </div>
           <div
             className="h-auto w-5/6 mt-12 ml-12 mr-16"
@@ -44,7 +47,7 @@ function Home() {
               <div className="flex flex-col items-start p-6">
                 <img
                   className="w-24.5 h-24 mb-3 mt-3 rounded-full shadow-lg"
-                  src="../../../src/assets/business pic.jpeg"
+                  src={businesspic}
                   alt="Ethan Image"
                 />
                 <div>
@@ -121,7 +124,7 @@ function Home() {
                   <div className="flex">
                     <img
                       className="w-12 h-11 mb-3 mt-3 rounded-md shadow-lg inline"
-                      src="../../assets/business pic.jpeg"
+                      src={businesspic}
                       alt="Ethan image"
                     />
                     <div className="inline-block h-1/2 pt-1 pl-3">
