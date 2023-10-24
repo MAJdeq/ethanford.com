@@ -9,30 +9,6 @@ import dhills from "../../assets/thunder.png";
 function WorkExp() {
   const [ref, inView] = useInView();
 
-  interface Job {
-    companyName: string;
-    role: string;
-    datesWorked: string;
-    description: string;
-  }
-
-  const jobs: Job[] = [
-    {
-      companyName: "Dixie Primary Care",
-      role: "Billing Assistant",
-      datesWorked: "Summer 2021-Summer 2023",
-      description:
-        "I processed and submitted medical insurance claims, ensured compliance with coding and billing guidelines, leading to a high claims acceptance rate. I contacted clients to address outstanding balances, negotiated payment arrangements, and met collection goals while maintaining positive client relations. I kept up-to-date with healthcare billing regulations, regularly updated coding knowledge (ICD-10, CPT), and ensured billing documentation met industry standards.",
-    },
-    {
-      companyName: "Ace Martial Arts",
-      role: "Youth MMA Instructor",
-      datesWorked: "Summer 2022-Summer 2023",
-      description:
-        "I mentored and guided young students through structured MMA training programs, helping them build physical fitness, self-confidence, and respect for others. I provided high-quality instruction in MMA techniques, prioritizing safety and discipline while teaching striking, grappling, and self-defense skills. I instilled values like discipline, sportsmanship, and perseverance, aiding students in their development as both martial artists and responsible individuals.",
-    },
-  ];
-
   return (
     <div
       id="workexp"
