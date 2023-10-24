@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/Resume-5.pdf";
 
 function Navbar() {
   return (
@@ -35,7 +36,7 @@ function Navbar() {
             </a>
             <a
               className="text-white mr-4"
-              href="../src/assets/Resume-5.pdf"
+              href={resume}
               download="Ethan Ford's Resume"
             >
               <button className="bg-gray-700 text-lg rounded-md hover:bg-gray-900 font-semibold transition-transform transform hover:scale-105 p-4 relative">
