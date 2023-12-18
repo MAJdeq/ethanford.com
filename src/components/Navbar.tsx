@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import {FiAlignRight} from "react-icons/fi";
 import resume from "../assets/Resume-5.pdf";
 
 function Navbar() {
+  const navLinks = ["Home", "About", "Work Experience", "Projects", "Contact Me"];
+  const[isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <nav className="border-gray-200 bg-gray-800 shadow-lg shadow-gray-700 py-3">
         <div className="flex pl-8 pt-2">
-          <a className="text-2xl text-white pt-3 pb-3" href="/">
+          <a className="text-lg lg:text-2xl text-white pt-2 pb-2 lg:pt-3 lg:pb-3" href="/">
             Ethan Ford
           </a>
-          <div className="text-white ml-auto text-md">
+          <div className="absolute right-0 mt-3 pr-3">
+            <label className="lg:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <FiAlignRight />
+            </label>
+            <ul className={`bg-gray-900 text-white rounded-md p-2 ${
+              isMenuOpen ? "" : "hidden"
+            }`}>
+              {navLinks.map((link) => (
+                <li key={link}>
+                  <a href={`#${link.toLowerCase()}`}>{link}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="text-white ml-auto text-md hidden lg:block">
             <a
               href="#home"
               className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
