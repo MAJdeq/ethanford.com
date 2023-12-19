@@ -12,7 +12,7 @@ import { BsDot } from "react-icons/bs";
 import zorocool from "../../assets/zorocool.png";
 import businesspic from "../../assets/business pic.jpeg";
 
-function Home() {
+function About() {
   const [ref, inView] = useInView();
   const [isClicked, setIsClicked] = useState(false);
 
@@ -23,28 +23,28 @@ function Home() {
   return (
     <div id="about" className="flex flex-col bg-gray-500">
       <div className="flex-grow">
-        <div className="mb-4 flex items-start">
+        <div className="mb-4 lg:flex lg:items-start">
           <div
             ref={ref}
-            className={`opacity-0 ml-12 mt-0 pt-8 animate__animated ${
+            className={`opacity-0 lg:ml-12 mt-0 pt-8 animate__animated ${
               inView ? "opactiy-100 animate__fadeInLeft" : ""
             }`}
-            style={{ marginLeft: "9rem" }}
+            style={{ marginLeft: "lg:9rem" }}
           >
             <img src={zorocool} alt="Roronoa Zoro" />
           </div>
           <div
-            className="h-auto w-5/6 mt-12 ml-12 mr-16"
-            style={{ marginRight: "3rem", marginLeft: "7rem" }}
+            className="h-auto lg:w-5/6 lg:mt-12 lg:ml-12 lg:mr-16 flex justify-center"
+            style={{ marginRight: "3rem", marginLeft: "4rem" }}
           >
             <div
               ref={ref}
-              className={`opacity-0 bg-white border w-3/4 mt-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
+              className={`opacity-0 bg-white border w-full lg:w-3/4 mt-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
                 inView ? "opacity-100 animate__fadeInRight" : ""
               }`}
-              style={{ marginLeft: "3.5rem" }}
+              style={{ marginLeft: "lg:3.5rem" }}
             >
-              <div className="flex flex-col items-start p-6">
+              <div className="flex flex-col items-center lg:items-start p-6">
                 <img
                   className="w-24.5 h-24 mb-3 mt-3 rounded-full shadow-lg"
                   src={businesspic}
@@ -74,8 +74,8 @@ function Home() {
                   />
                   Joined April 4, 2003
                 </span>
-                <div className="flex w-full block justify-between">
-                  <div className="mt-2">
+                <div className="lg:flex w-full block lg:justify-between">
+                  <div className="mt-7 lg:mt-2">
                     <div>
                       <span className="text-sm text-white">
                         0
@@ -92,7 +92,7 @@ function Home() {
                     </div>
                   </div>
                   <button
-                    className={`inline items-end text-white font-bold p-2.5 rounded-full ${
+                    className={`inline text-white font-bold p-2.5 rounded-full ${
                       isClicked
                         ? "bg-gray-600 hover:bg-gray-700 transition-transform transform hover:scale-105"
                         : "bg-blue-500 hover:bg-blue-600 transition-transform transform hover:scale-105"
@@ -116,11 +116,11 @@ function Home() {
                   </button>
                 </div>
                 <div className="border-b border-0.5 w-full border-gray-600 my-4"></div>
-                <div className="text-sm text-gray-400">
+                <div className="w-full block">
+                <div className="text-sm items-start text-gray-400">
                   <VscPinned className="pr-1 pb-1 inline" size={17} />
                   Pinned
                 </div>
-                <div className="w-full block">
                   <div className="flex">
                     <img
                       className="w-12 h-11 mb-3 mt-3 rounded-md shadow-lg inline"
@@ -136,7 +136,7 @@ function Home() {
                       <span className="text-sm text-gray-400 pb-2 inline pl-2">
                         @EthanFord <BsDot className="inline" size={15} /> 2h
                       </span>
-                      <div className="pt-1 text-white text-md">
+                      <div className="pt-1 text-white text-sm lg:text-md">
                         <h1>
                           Hi! I am currently studying Computer Science at Utah
                           State University. As a developer, I'm striving to
@@ -166,4 +166,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;
