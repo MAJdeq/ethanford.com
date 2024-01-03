@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
 import WorkExp from "./components/sections/WorkExp";
+import Projects from "./components/sections/Projects";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <WorkExp />
+      <Projects />
     </>
   );
 }

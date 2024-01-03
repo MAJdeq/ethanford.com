@@ -8,6 +8,7 @@ export default function Home() {
       <div className="container flex mx-auto justify-center items-center h-screen w-screen">
         <div
           ref={ref}
+<<<<<<< HEAD
           className={`flex mx-auto lg:ml-auto max-w-lg lg:max-w-6xl p-2 lg:p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
             inView ? "opactiy-100 animate__fadeIn" : ""
           }`}
@@ -18,6 +19,18 @@ export default function Home() {
               <h5
                 ref={ref}
                 className={`mb-2 text-2xl text-center lg:text-left lg:text-6xl mt-1 font-bold tracking-tight text-gray-900 dark:text-white animate__animated ${
+=======
+          className={`lg:flex lg:mr-auto lg:ml-auto lg:max-w-6xl lg:p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
+            inView ? "opacity-100 animate__fadeIn" : ""
+          }`}
+          style={{ height: "lg:75vh" }}
+        >
+          <div className="lg:w-1/2">
+            <div className="p-5 lg:items-start">
+              <h5
+                ref={ref}
+                className={`mb-2 text-5xl lg:text-6xl mt-1 font-bold tracking-tight text-gray-900 dark:text-white animate__animated ${
+>>>>>>> c3c6edbe204b5ef309ac12c196f9e509be309822
                   inView ? "opactiy-100 animate__fadeInLeft" : ""
                 }`}
               >
@@ -99,8 +112,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="container lg:w-1/2 lg:flex lg:justify-end">
             <h1 className="">
+=======
+          <div className="hidden lg:w-1/2 lg:flex lg:justify-end">
+            <h1>
+>>>>>>> c3c6edbe204b5ef309ac12c196f9e509be309822
               <GiFallingBomb
                 className="w-full max-w-md text-white text-right pr-10 pt-8"
                 size={490}

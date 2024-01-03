@@ -7,5 +7,6 @@
     "esModuleInterop": true, // Enable interoperability with CommonJS modules
     "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
     "noEmit": true // Do not emit JavaScript files
-  }
+  },
+  "include": ["src", "src/declaration.d.ts"]
 }
