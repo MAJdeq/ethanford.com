@@ -1,33 +1,13 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { LibraryBig, Briefcase } from "lucide-react";
+import usu from "../../assets/usu.png";
+import ace from "../../assets/aceMartialArts.png";
+import dpc from "../../assets/dpc.png";
+import dhills from "../../assets/thunder.png";
 
 function WorkExp() {
   const [ref, inView] = useInView();
-
-  interface Job {
-    companyName: string;
-    role: string;
-    datesWorked: string;
-    description: string;
-  }
-
-  const jobs: Job[] = [
-    {
-      companyName: "Dixie Primary Care",
-      role: "Billing Assistant",
-      datesWorked: "Summer 2021-Summer 2023",
-      description:
-        "I processed and submitted medical insurance claims, ensured compliance with coding and billing guidelines, leading to a high claims acceptance rate. I contacted clients to address outstanding balances, negotiated payment arrangements, and met collection goals while maintaining positive client relations. I kept up-to-date with healthcare billing regulations, regularly updated coding knowledge (ICD-10, CPT), and ensured billing documentation met industry standards.",
-    },
-    {
-      companyName: "Ace Martial Arts",
-      role: "Youth MMA Instructor",
-      datesWorked: "Summer 2022-Summer 2023",
-      description:
-        "I mentored and guided young students through structured MMA training programs, helping them build physical fitness, self-confidence, and respect for others. I provided high-quality instruction in MMA techniques, prioritizing safety and discipline while teaching striking, grappling, and self-defense skills. I instilled values like discipline, sportsmanship, and perseverance, aiding students in their development as both martial artists and responsible individuals.",
-    },
-  ];
 
   return (
     <div
@@ -60,11 +40,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img
-              src="../../../src/assets/usu.png"
-              alt="Cool Zoro"
-              className=" scale-75"
-            />
+            <img src={usu} alt="Cool Zoro" className=" scale-75" />
           </div>
         </li>
         <li className="mb-10 ml-4 bg-gray-800 rounded-lg p-3 w-3/4 flex items-center">
@@ -82,10 +58,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img
-              src="../../../src/assets/aceMartialArts.png"
-              className="scale-75"
-            />
+            <img src={ace} className="hidden lg:block scale-75" />
           </div>
         </li>
         <li className="ml-4 bg-gray-800 rounded-lg w-3/4 p-3 flex items-center">
@@ -103,7 +76,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img src="../../../src/assets/dpc.png" className="scale-75" />
+            <img src={dpc} className="scale-75" />
           </div>
         </li>
         <li className="mb-10 ml-4 bg-gray-800 rounded-lg p-3 mt-10  w-3/4 flex items-center">
@@ -121,7 +94,7 @@ function WorkExp() {
             </p>
           </div>
           <div className="w-1/2">
-            <img src="../../../src/assets/thunder.png" className=" scale-75" />
+            <img src={dhills} className=" scale-75" />
           </div>
         </li>
       </ol>

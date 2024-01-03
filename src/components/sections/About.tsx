@@ -9,6 +9,9 @@ import { useState } from "react";
 import { VscPinned } from "react-icons/vsc";
 import { GoVerified } from "react-icons/go";
 import { BsDot } from "react-icons/bs";
+import zorocool from "../../assets/zorocool.png";
+import businesspic from "../../assets/business pic.jpeg";
+
 function Home() {
   const [ref, inView] = useInView();
   const [isClicked, setIsClicked] = useState(false);
@@ -23,28 +26,28 @@ function Home() {
         <div className="mb-4 flex items-start">
           <div
             ref={ref}
-            className={`opacity-0 ml-12 mt-0 pt-8 animate__animated ${
+            className={`opacity-0 ml-12 mt-0 pt-8 animate__animated hidden lg:block ${
               inView ? "opactiy-100 animate__fadeInLeft" : ""
             }`}
-            style={{ marginLeft: "9rem" }}
+            style={{ marginLeft: "7rem" }}
           >
-            <img src={"../../../src/assets/zorocool.png"} alt="Roronoa Zoro" />
+            <img src={zorocool} alt="Roronoa Zoro" className="" />
           </div>
           <div
-            className="h-auto w-5/6 mt-12 ml-12 mr-16"
+            className="h-auto lg:w-5/6 lg:mt-12 lg:ml-12 lg:mr-16 sm:mx-auto"
             style={{ marginRight: "3rem", marginLeft: "7rem" }}
           >
             <div
               ref={ref}
-              className={`opacity-0 bg-white border w-3/4 mt-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
+              className={`opacity-0 bg-white border w-full lg:w-3/4 mt-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
                 inView ? "opacity-100 animate__fadeInRight" : ""
               }`}
-              style={{ marginLeft: "3.5rem" }}
+              style={{ marginLeft: "9rem" }}
             >
-              <div className="flex flex-col items-start p-6">
+              <div className="flex flex-col p-6 items-center lg:items-start">
                 <img
                   className="w-24.5 h-24 mb-3 mt-3 rounded-full shadow-lg"
-                  src="../../../src/assets/business pic.jpeg"
+                  src={businesspic}
                   alt="Ethan Image"
                 />
                 <div>
@@ -89,7 +92,7 @@ function Home() {
                     </div>
                   </div>
                   <button
-                    className={`inline items-end text-white font-bold p-2.5 rounded-full ${
+                    className={`hidden sm:blockinline items-end text-white font-bold p-2.5 rounded-full ${
                       isClicked
                         ? "bg-gray-600 hover:bg-gray-700 transition-transform transform hover:scale-105"
                         : "bg-blue-500 hover:bg-blue-600 transition-transform transform hover:scale-105"
@@ -121,7 +124,7 @@ function Home() {
                   <div className="flex">
                     <img
                       className="w-12 h-11 mb-3 mt-3 rounded-md shadow-lg inline"
-                      src="../../assets/business pic.jpeg"
+                      src={businesspic}
                       alt="Ethan image"
                     />
                     <div className="inline-block h-1/2 pt-1 pl-3">
