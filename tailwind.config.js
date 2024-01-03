@@ -16,6 +16,9 @@ export default {
       animation: {
         "left-slide": "left-slide 1s ease-out",
       },
+      spacing: {
+        "9rem": "9rem",
+      },
     },
   },
   plugins: [],

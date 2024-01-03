@@ -102,7 +102,7 @@ function WorkExp() {
   //     </ol>
   //   </div>
   // );
-  return(
+  return (
     <>
       <div
         id="workexp"
@@ -181,10 +181,10 @@ function WorkExp() {
             <div className="w-1/2">
               <img src={dhills} className=" scale-75" />
             </div>
-        </li>
+          </li>
         </ol>
       </div>
     </>
-  )
+  );
 }
 export default WorkExp;

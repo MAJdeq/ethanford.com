@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-screen flex justify-center items-center">
+      <div className="container flex mx-auto justify-center items-center h-screen w-screen">
         <div
           ref={ref}
           className={`lg:flex lg:mr-auto lg:ml-auto lg:max-w-6xl lg:p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 animate__animated ${
@@ -29,12 +29,12 @@ export default function Home() {
               </h5>
               <div
                 ref={ref}
-                className={`bg-gray-900 p-2 mt-5 rounded-lg font-mono animate__animated ${
+                className={` bg-gray-900 p-2 mt-1 lg:mt-5 rounded-lg font-mono lg:text-md animate__animated ${
                   inView ? "opactiy-100 animate__fadeInUp" : ""
                 }`}
               >
                 <div className="flex">
-                  <span className="text-md text-gray-500">&gt; </span>
+                  <span className="lg:text-md text-gray-500">&gt; </span>
                   <span className=" pl-2 text-purple-400 inline">import</span>
                   <span className="pl-2 text-yellow-500 inline">&#123;</span>
                   <span className="pl-2 text-blue-300 inline"> React </span>
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="hidden lg:w-1/2 lg:flex lg:justify-end">
             <h1>
               <GiFallingBomb
-                className="text-white text-right pr-10 pt-8"
+                className="w-full max-w-md text-white text-right pr-10 pt-8"
                 size={490}
               />
             </h1>
