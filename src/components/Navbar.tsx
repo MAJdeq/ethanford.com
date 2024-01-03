@@ -3,14 +3,8 @@ import { FiAlignRight } from "react-icons/fi";
 import resume from "../assets/Resume-5.pdf";
 
 function Navbar() {
-  const navLinks = [
-    "Home",
-    "About",
-    "Work Experience",
-    "Projects",
-    "Contact Me",
-  ];
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navLinks = ["Home", "About", "Work Exp", "Projects", "Contact Me"];
+  const[isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <nav className="border-gray-200 bg-gray-800 shadow-lg shadow-gray-700 py-3 w-full">

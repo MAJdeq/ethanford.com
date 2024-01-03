@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GiFallingBomb } from "react-icons/gi";
 import { useInView } from "react-intersection-observer";
+
 export default function Home() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <>
       <div className="container flex mx-auto justify-center items-center h-screen w-screen">
