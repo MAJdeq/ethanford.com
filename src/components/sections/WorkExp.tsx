@@ -7,7 +7,9 @@ import dpc from "../../assets/dpc.png";
 import dhills from "../../assets/thunder.png";
 
 function WorkExp() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
 
   // return (
   //   <div
@@ -119,7 +121,7 @@ function WorkExp() {
             <LibraryBig className="text-white" />
             <div className="ml-2 w-1/2">
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                May 2025
+                Currently Attending | May 2025
               </time>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 Expected Graduation Date

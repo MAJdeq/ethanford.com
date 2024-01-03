@@ -1,18 +1,18 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from 'react-responsive-carousel';
+
 function Projects() {
+
+  
+
   return (
     <>
-      <div className="bg-gray-500 pt-10">
-        <div className="bg-gray-500">
-          <div
-            id="controls-carousel"
-            className="relative w-1/2 mx-auto shadow-black shadow-md"
-            data-carousel="static"
-            style={{ marginRight: "40rem" }}
-          >
-          </div>
-        </div>
+    <div className="bg-gray-500">
+      <div>
+        
       </div>
+    </div>
     </>
   );
 }
