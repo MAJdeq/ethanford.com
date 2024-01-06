@@ -4,7 +4,7 @@ import resume from "../assets/Resume-5.pdf";
 
 function Navbar() {
   const navLinks = ["Home", "About", "Work Exp", "Projects", "Contact Me"];
-  const[isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <nav className="border-gray-200 bg-gray-800 shadow-lg shadow-gray-700 py-3 w-full">
@@ -55,9 +55,15 @@ function Navbar() {
             </a>
             <a
               href="#projects"
-              className="text-md mr-11 hover:text-gray-400 duration-200 ease-in"
+              className="text-md mr-5 hover:text-gray-400 duration-200 ease-in"
             >
               Projects
+            </a>
+            <a
+              href="#contact me"
+              className="text-md mr-11 hover:text-gray-400 duration-200 ease-in"
+            >
+              Contact Me
             </a>
             <a
               className="text-white mr-4"
