@@ -51,7 +51,7 @@ function ContactMe() {
 
   return (
     <>
-      <div id="contact me" className="bg-gray-500 p-4">
+      <div id="contact me" className="bg-gray-700 p-4">
         <div className="flex bg-gray-800 rounded-lg m-12">
           <div className="w-1/2 border-r border-gray-600 mt-5 mb-5">
             <div className="text-md lg:text-5xl p-5 text-white font-semibold">
@@ -82,6 +82,7 @@ function ContactMe() {
               <textarea
                 className="m-5 p-3 rounded-xl bg-black text-white"
                 name="message"
+                placeholder="Message..."
                 cols={30}
                 rows={10}
               ></textarea>

@@ -32,6 +32,15 @@ function Navbar() {
                   <a href={`#${link.toLowerCase()}`}>{link}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  className="text-white mr-4"
+                  href={resume}
+                  download="Ethan Ford's Resume"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
           <div className="text-white ml-auto text-md hidden lg:block">

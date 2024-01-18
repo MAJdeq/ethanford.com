@@ -13,7 +13,9 @@ import zorocool from "../../assets/zorocool.png";
 import businesspic from "../../assets/business pic.jpeg";
 
 function About() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
